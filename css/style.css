@@ -1,0 +1,178 @@
+body {
+  padding-top: 56px;
+  font-family: "Playfair Display", serif;
+}
+
+.navbar-brand img {
+  width: 100px;
+  height: auto;
+}
+
+.hero-content h1,
+.card-body p,
+.rooms-hero h1,
+.about-hero h1,
+.about-section h2,
+.amenity-card h5,
+.stat-number,
+.room-row h3,
+.room-row .price,
+.contact-card h2 {
+  font-family: "Roboto", serif;
+}
+
+.hero-content p,
+.rooms-hero p,
+.about-hero p {
+  font-family: "Poppins", serif;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+/* Carousel fills the hero */
+.hero .carousel,
+.hero .carousel-inner,
+.hero .carousel-item {
+  height: 100%;
+}
+
+/* Hero images */
+.hero .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark overlay */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Hero text */
+.hero-content {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  text-align: center;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 90%;
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+}
+
+/* Carousel controls above overlay */
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+  z-index: 20;
+}
+
+/* Cards */
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+/* ABOUT PAGE */
+.about-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../images/background-5-the-private-reserve-maldives-gili-hero-shot.jpg")
+      center/cover no-repeat;
+  padding: 100px 0;
+}
+
+.about-section {
+  padding: 70px 0;
+}
+
+.amenity-card {
+  height: 100%;
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.amenity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.amenity-icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.stats {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.stat-number {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* ROOMS PAGE */
+.rooms-hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../images/background-4-luxury-hotel-lifestyle-photography-guest-experience.jpg")
+      center/cover no-repeat;
+  padding: 90px 0;
+}
+
+.room-card {
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.room-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.room-description {
+  min-height: 48px;
+}
